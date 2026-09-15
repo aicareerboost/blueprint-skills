@@ -30,13 +30,37 @@ Use this template only when the project does not supply its own. Omit sections t
 
 ### Explicitly out of scope
 
+### Deferred ideas
+
+Capture useful ideas that are intentionally outside the current intent or version. Include the reason for deferral.
+
 ## 4. Core workflows
 
 Describe the smallest end-to-end behaviors required for this version.
 
 ## 5. Requirements and acceptance criteria
 
-Use observable behavior. Include important failure, refusal, recovery, and human-handoff cases.
+Use stable IDs such as `REQ-01` for priority requirements. Each requirement states one observable behavior and includes at least one scenario. Consequential requirements include both success and an applicable failure, refusal, recovery, or human-handoff scenario.
+
+### REQ-01 — <observable behavior>
+
+<One independently testable obligation.>
+
+**Success scenario**
+
+```text
+GIVEN <starting context>
+WHEN <event or action>
+THEN <observable outcome>
+```
+
+**Failure, refusal, recovery, or handoff scenario**
+
+```text
+GIVEN <consequential condition>
+WHEN <event or action>
+THEN <observable safe outcome>
+```
 
 ## 6. Constraints and dependencies
 
@@ -44,16 +68,21 @@ Record known limits without choosing an implementation prematurely.
 
 ## 7. Risk and control register
 
-| Risk scenario and consequence | Evidence or assumption | Mitigation | Contingency or trigger | Owner | Human approval or stop boundary | Future evaluation |
-|---|---|---|---|---|---|---|
+| ID | Risk scenario and consequence | Evidence or assumption | Mitigation | Contingency or trigger | Owner | Human approval or stop boundary | Future evaluation |
+|---|---|---|---|---|---|---|---|
+| RISK-01 |  |  |  |  |  |  |  |
 
 ## 8. Decisions, assumptions, and open questions
 
 ### Decisions
 
+- **DEC-01:** <decision and rationale>
+
 ### Assumptions to validate
 
 ### Open questions
+
+- **OQ-01:** <question, consequence, and whether it blocks the next decision>
 
 ## 9. Data and evidence questions
 
@@ -67,4 +96,11 @@ Record known limits without choosing an implementation prematurely.
 ## 10. Next decision
 
 Name the next decision or evidence-gathering step. Do not silently turn it into an implementation task.
+
+## 11. Decision and clarification record
+
+Append concise dated entries when an approved interview pass changes the spec.
+
+| Date | IDs affected | Accepted change and rationale |
+|---|---|---|
 ```
