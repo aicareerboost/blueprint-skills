@@ -1,0 +1,14 @@
+{
+  "name": "aicareerboost",
+  "owner": {
+    "name": "AI Career Boost"
+  },
+  "description": "Open agent skills for AI product leaders from AI Career Boost.",
+  "plugins": [
+    {
+      "name": "blueprint",
+      "source": "./",
+      "description": "Open skills for AI product leaders: spec interview, risk assessment, wrap, and resume project."
+    }
+  ]
+}

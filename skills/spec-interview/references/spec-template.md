@@ -66,11 +66,13 @@ THEN <observable safe outcome>
 
 Record known limits without choosing an implementation prematurely.
 
-## 7. Risk and control register
+## 7. Risks
 
-| ID | Risk scenario and consequence | Evidence or assumption | Mitigation | Contingency or trigger | Owner | Human approval or stop boundary | Future evaluation |
-|---|---|---|---|---|---|---|---|
-| RISK-01 |  |  |  |  |  |  |  |
+Keep this section short. The full stakeholder and risk work lives in `STAKEHOLDER-REGISTER.md` and `RISK-REGISTER.md`, created by the `risk-assessment` skill.
+
+- **Top risks:** <RISK-IDs and one-line scenarios, or "Not yet assessed; run /risk-assessment">
+- **Requirements driven by risk:** <REQ-IDs linked to RISK-IDs>
+- **Questions for qualified review:** <legal, privacy, security, or IP questions; no conclusions>
 
 ## 8. Decisions, assumptions, and open questions
 

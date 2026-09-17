@@ -1,11 +1,29 @@
 ---
 name: spec-interview
-description: Interview a product owner to turn an existing brief, prototype, or idea into a bounded, testable, risk-aware product specification. Use before technical planning or implementation when consequential product decisions and ambiguities still need to be surfaced.
+description: Interview a product owner to turn an existing brief, prototype, or idea into a bounded, testable SPEC.md, setting up the project folder for them if needed. Use before technical planning or implementation when consequential product decisions and ambiguities still need to be surfaced.
 ---
 
 # Spec Interview
 
-Turn existing product thinking into a reviewable specification without making product decisions for the owner or rushing into implementation.
+Turn existing product thinking into a reviewable `SPEC.md` without making product decisions for the owner or rushing into implementation.
+
+The people using this skill are often product leaders, not developers. Do the file handling for them. Never ask them to create folders, move files, or run terminal commands by hand.
+
+This skill assumes a simple working system: **one folder per project**, with `/wrap` before ending or clearing a session and `/resume-project` when coming back.
+
+## Set up the project first
+
+1. Check whether the current folder already looks like the user's project: a brief, notes, an existing `SPEC.md`, or a `PROJECT-STATE.md`.
+2. If it does, confirm the folder with the user in one sentence and continue.
+3. If it does not, ask where the brief is. Accept any of these:
+   - a file path on their computer;
+   - text pasted into the chat; or
+   - the contents of a Google Doc or other document, pasted into the chat.
+4. Offer to create a project folder and save the brief there. Suggest `~/projects/<capstone-name>/` using a short, lowercase, hyphenated name based on the project, and suggest `BRIEF.md` as the file name for pasted text. Show the exact folder and file you would create and wait for a yes before creating anything.
+5. If the user prefers another location, use it. If the brief is a file elsewhere, copy it into the project folder only with permission, and never modify the original.
+6. After creating the folder, tell the user to open that folder in Claude Code for future sessions so their project instructions and files load together.
+
+Keep confidential material out of the project. If the brief appears to contain credentials, personal data about real people, or material the user may not be authorized to share, point it out and ask how to proceed.
 
 ## Start from evidence
 
@@ -61,6 +79,10 @@ When data or retrieval architecture is intentionally deferred, record the unreso
 
 Do not make legal or regulatory conclusions. Surface questions that require qualified review.
 
+## Keep risk work light here
+
+Capture only the risks the owner raises or the evidence makes obvious, as short open items. The full stakeholder and risk work happens in the `risk-assessment` skill, which produces `STAKEHOLDER-REGISTER.md` and `RISK-REGISTER.md` and proposes any resulting requirements back into this spec. In the spec, point to those files rather than duplicating them.
+
 ## Draft only after a decision gate
 
 Before writing a spec, show the user:
@@ -69,7 +91,7 @@ Before writing a spec, show the user:
 2. assumptions that will be labeled;
 3. consequential open questions;
 4. the proposed document outline; and
-5. the exact file that would be created or changed.
+5. the exact file that would be created or changed (by default, `SPEC.md` in the project folder, version 0.1).
 
 Wait for approval before writing. If the user asked only for an interview or analysis, do not create a file.
 
@@ -118,4 +140,14 @@ After drafting, audit the spec against its sources without editing it. Pass it t
 
 Also flag implementation detail that belongs in a later technical plan.
 
-Ask the user to resolve or accept the highest-impact findings. Make only approved, narrow revisions. End with the spec path, version, remaining open questions, and the recommended next decision—not an invitation to start building automatically.
+Ask the user to resolve or accept the highest-impact findings. Make only approved, narrow revisions. End with the spec path, version, remaining open questions, and the recommended next decision, not an invitation to start building automatically.
+
+## Hand off
+
+Close with three short lines:
+
+1. where `SPEC.md` lives and its version;
+2. the recommended next step: run `/risk-assessment` to build the stakeholder and risk registers and add any requirements they reveal; and
+3. a reminder to run `/wrap` before ending the session so the next session can pick up from the files.
+
+If these skills were installed as the `blueprint` plugin, their commands carry a prefix: `/blueprint:spec-interview`, `/blueprint:risk-assessment`, `/blueprint:wrap`, and `/blueprint:resume-project`. Use whichever form appears in the user's `/` menu when you recommend a command.

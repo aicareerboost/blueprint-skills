@@ -1,0 +1,12 @@
+{
+  "name": "blueprint",
+  "displayName": "Blueprint Skills",
+  "version": "0.2.0",
+  "description": "Open skills for AI product leaders: turn a brief into a spec, build stakeholder and risk registers, and save and resume project state.",
+  "author": {
+    "name": "AI Career Boost"
+  },
+  "homepage": "https://github.com/aicareerboost/blueprint-skills",
+  "repository": "https://github.com/aicareerboost/blueprint-skills",
+  "license": "MIT"
+}
