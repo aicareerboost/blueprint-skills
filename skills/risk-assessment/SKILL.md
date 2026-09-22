@@ -113,7 +113,7 @@ Give a short summary:
 
 Then suggest running `/wrap` so the next session can pick up from the files.
 
-If these skills were installed as the `blueprint` plugin, their commands carry a prefix: `/blueprint:spec-interview`, `/blueprint:risk-assessment`, `/blueprint:wrap`, and `/blueprint:resume-project`. Use whichever form appears in the user's `/` menu when you recommend a command.
+If these skills were installed as the `blueprint` plugin, their commands carry a prefix: `/blueprint:spec-interview`, `/blueprint:risk-assessment`, `/blueprint:golden-set`, `/blueprint:wrap`, and `/blueprint:resume-project`. Use whichever form appears in the user's `/` menu when you recommend a command.
 
 ## Safety boundaries
 

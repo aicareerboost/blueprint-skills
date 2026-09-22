@@ -150,4 +150,4 @@ Close with three short lines:
 2. the recommended next step: run `/risk-assessment` to build the stakeholder and risk registers and add any requirements they reveal; and
 3. a reminder to run `/wrap` before ending the session so the next session can pick up from the files.
 
-If these skills were installed as the `blueprint` plugin, their commands carry a prefix: `/blueprint:spec-interview`, `/blueprint:risk-assessment`, `/blueprint:wrap`, and `/blueprint:resume-project`. Use whichever form appears in the user's `/` menu when you recommend a command.
+If these skills were installed as the `blueprint` plugin, their commands carry a prefix: `/blueprint:spec-interview`, `/blueprint:risk-assessment`, `/blueprint:golden-set`, `/blueprint:wrap`, and `/blueprint:resume-project`. Use whichever form appears in the user's `/` menu when you recommend a command.

@@ -10,6 +10,7 @@ You don't need to write code to use them. Claude does the file handling; you mak
 |---|---|---|
 | `spec-interview` | Interviews you about your brief, one question at a time, and drafts a bounded, testable spec. Sets up a project folder for you if you don't have one yet. | `SPEC.md` |
 | `risk-assessment` | Works through who your product affects and what could go wrong, checks for overlooked risks, helps you score and rank them, plans how to handle the top ones, and proposes new requirements for your spec. | `STAKEHOLDER-REGISTER.md`, `RISK-REGISTER.md`, `risk-register.csv`, and approved changes to `SPEC.md` |
+| `golden-set` | Writes your first five test cases with you, carrying across the evaluation notes already sitting in your risk register, and records what an acceptable answer looks like before anything is measured. | `EVALS.md`, and approved changes to `SPEC.md` |
 | `wrap` | Saves where your project stands so the next session can continue from files, not chat history. | `PROJECT-STATE.md` |
 | `resume-project` | Reads your saved project state and recommends the next step, without changing anything. | Nothing |
 
@@ -31,7 +32,7 @@ Open Claude Code and paste this message:
 Install the skills from https://github.com/aicareerboost/blueprint-skills into my personal Claude skills folder (~/.claude/skills). Copy each folder inside skills/ as its own skill. If a skill with the same name already exists, ask me before replacing it. Then list what you installed.
 ```
 
-Claude downloads the skills and copies them into place. Start a new session, then type `/` to see them in the menu. Commands: `/spec-interview`, `/risk-assessment`, `/wrap`, `/resume-project`.
+Claude downloads the skills and copies them into place. Start a new session, then type `/` to see them in the menu. Commands: `/spec-interview`, `/risk-assessment`, `/golden-set`, `/wrap`, `/resume-project`.
 
 ### Option B: install as a plugin
 
@@ -42,7 +43,7 @@ In Claude Code, run:
 /plugin install blueprint@aicareerboost
 ```
 
-Plugin skills carry a prefix: `/blueprint:spec-interview`, `/blueprint:risk-assessment`, `/blueprint:wrap`, `/blueprint:resume-project`.
+Plugin skills carry a prefix: `/blueprint:spec-interview`, `/blueprint:risk-assessment`, `/blueprint:golden-set`, `/blueprint:wrap`, `/blueprint:resume-project`.
 
 ## Use them in order
 
