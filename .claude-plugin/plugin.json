@@ -1,8 +1,8 @@
 {
   "name": "blueprint",
   "displayName": "Blueprint Skills",
-  "version": "0.3.0",
-  "description": "Open skills for AI product leaders: turn a brief into a spec, build stakeholder and risk registers, write a golden test set, and save and resume project state.",
+  "version": "0.4.0",
+  "description": "Open skills for AI product leaders: turn a brief into a spec, build stakeholder and risk registers, plan where the product's data and answers come from, write a golden test set, and save and resume project state.",
   "author": {
     "name": "AI Career Boost"
   },
